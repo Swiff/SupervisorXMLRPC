@@ -547,4 +547,11 @@ class Api
         return $this->_call('system.multicall', [$calls]);
     }
 
+    /**
+     *
+     */
+    public function reloadConfig()
+    {
+        return $this->_call('reloadConfig');
+    }
 }
