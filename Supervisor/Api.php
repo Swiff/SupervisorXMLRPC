@@ -548,7 +548,12 @@ class Api
     }
 
     /**
+     * Reload the configuration. The result contains three arrays containing names of process groups. added gives the
+     * process groups that have been added. changed gives the process groups whose contents have changed. removed
+     * gives the process groups that are no longer in the configuration
      *
+     * @see http://supervisord.org/api.html#supervisor.rpcinterface.SupervisorNamespaceRPCInterface.reloadConfig
+     * @return array result [[added, changed, removed]]
      */
     public function reloadConfig()
     {
